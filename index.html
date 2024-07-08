@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <STYle>
+        body{
+            background-image: url(athlete-prepared-run-athletics-track.jpg);
+            background-size: cover;
+        }
+    </STYle>
+    <div class="stopwatch">
+        <div class="display">
+            <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">000</span>
+        </div>
+        <div class="controls">
+            <button id="startPause" onclick="startPause()">Start</button>
+            <button id="lapReset" onclick="lapReset()">Lap</button>
+        </div>
+        <ul class="laps" id="laps"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
